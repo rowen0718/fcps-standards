@@ -378,6 +378,3 @@ Section related to metadata requirements/standards of practice.
 ### <a name="uat"></a> User Acceptance Testing
 
 [Back to the Top](#top) [Back to beginning of Section](#testing) [Back to Table of Contents](#codingStandardsTOC)
-
-
-
