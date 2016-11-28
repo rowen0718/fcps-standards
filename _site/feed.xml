@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office of Data, Research, and Accountability</title>
+    <description>Data and Coding Standards</description>
+    <link>http://localhost:4000/fcps-standards/</link>
+    <atom:link href="http://localhost:4000/fcps-standards/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 28 Nov 2016 11:03:16 -0500</pubDate>
+    <lastBuildDate>Mon, 28 Nov 2016 11:03:16 -0500</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+  </channel>
+</rss>

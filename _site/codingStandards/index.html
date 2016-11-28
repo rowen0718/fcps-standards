@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Code</title>
+    <meta name="description" content="Data and Coding Standards">
+
+    <link rel="stylesheet" href="/fcps-standards/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/fcps-standards/codingStandards/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/fcps-standards/">Office of Data, Research, and Accountability</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewbox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+          <a class="page-link" href="/fcps-standards/codingStandards/">Code</a>
+          
+        
+          
+          <a class="page-link" href="/fcps-standards/dataStandards/">Data</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>    
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Code</h1>
+  </header>
+
+  <article class="post-content">
+    <h1 id="a-namecodingstandardstoca-coding-standards">
+<a name="codingStandardsTOC"></a> Coding Standards</h1>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ul>
+  <li>
+<a href="#codingStandards">Coding Standards</a>
+    <ol>
+      <li><a href="#purpose">Introduction</a></li>
+      <li>
+<a href="#fileSystem">File System Management</a>
+        <ul>
+          <li><a href="#fileNames">File Naming Conventions</a></li>
+          <li><a href="#directoryTree">Directory Tree Structure</a></li>
+          <li><a href="#fileVersions">Versioning Files</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#naming">Naming Conventions</a>
+        <ul>
+          <li><a href="#nameStyle">Naming Style</a></li>
+          <li><a href="#demographics">Demographic Data</a></li>
+          <li><a href="#assessment">Assessment Data</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#documentation">Documenting Code</a>
+        <ul>
+          <li><a href="#literateProgramming">Literate Programming</a></li>
+          <li><a href="#fileHeader">File Headers</a></li>
+          <li><a href="#blockComments">Block Comments</a></li>
+          <li><a href="#inlineComments">In-line Comments</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#whenToDev">Development Guidance</a>
+        <ul>
+          <li><a href="#codeReuse">Reusability</a></li>
+          <li><a href="#replicable">Replicability</a></li>
+          <li><a href="#reliability">Reliability</a></li>
+          <li><a href="#responsibility">Responsibility</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#vcs">Version Control</a>
+        <ul>
+          <li><a href="#git">Git: Live it, Learn it, Love it</a></li>
+          <li><a href="#gitInit">Repository Initialization</a></li>
+          <li><a href="#gitAdd">Staging Code for Commit</a></li>
+          <li><a href="#gitCommit">Committing Code to Repository</a></li>
+          <li><a href="#gitPush">Pushing Changes to Remote Repository</a></li>
+          <li><a href="#gitFetch">Getting Changes from Remote Repository</a></li>
+          <li><a href="#gitMerge">Combining Changes from Other Repositories/Branches</a></li>
+          <li><a href="#pullRequests">Pull Requests</a></li>
+          <li><a href="#contributingCode">Code Contributions</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#codeStyle">Style Guides</a>
+        <ul>
+          <li><a href="#Stata">Stata</a></li>
+          <li><a href="#R">R</a></li>
+          <li><a href="#Java">Java</a></li>
+          <li><a href="#SQL">SQL</a></li>
+          <li><a href="#bash">Bash</a></li>
+          <li><a href="#CSharp">C#</a></li>
+          <li><a href="#vb">Visual Basic</a></li>
+          <li><a href="#Julia">Julia</a></li>
+          <li><a href="#Python">Python</a></li>
+          <li><a href="#batch">Batch</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#codeReview">Code Reviews</a>
+        <ul>
+          <li><a href="#reviewingCode">Reviewing Code</a></li>
+          <li><a href="#checkingStyle">Checking Style</a></li>
+          <li><a href="#qaqc">QA/QC</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#businessRules">Collecting Business Rules</a>
+        <ul>
+          <li><a href="#userStories">User Stories</a></li>
+          <li><a href="#epics">Epics</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#testing">Testing</a>
+        <ul>
+          <li><a href="#unit">Unit Testing</a></li>
+          <li><a href="#regression">Regression Tests</a></li>
+          <li><a href="#uat">User Acceptance Testing</a></li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h1 id="a-namecodingstandardsa-coding-standards">
+<a name="codingStandards"></a> Coding Standards</h1>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namepurposea-1-introduction">
+<a name="purpose"></a> 1. Introduction</h2>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namefilesystema-2-file-system-management">
+<a name="fileSystem"></a> 2. File System Management</h2>
+
+<p><a href="#top">Back to the Top</a> <a href="#fileSystem">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namefilenamesa-file-naming-conventions">
+<a name="fileNames"></a> File Naming Conventions</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#fileSystem">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namedirectorytreea-directory-tree-structure">
+<a name="directoryTree"></a> Directory Tree Structure</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#fileSystem">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namefileversionsa-versioning-files">
+<a name="fileVersions"></a> Versioning Files</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#fileSystem">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namenaminga-3-naming-conventions">
+<a name="naming"></a> 3. Naming Conventions</h2>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namenamestylea-naming-style">
+<a name="nameStyle"></a> Naming Style</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#naming">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namedemographicsa-demographic-data">
+<a name="demographics"></a> Demographic Data</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#naming">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameassessmenta-assessment-data">
+<a name="assessment"></a> Assessment Data</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#naming">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namedocumentationa-4-documenting-code">
+<a name="documentation"></a> 4. Documenting Code</h2>
+
+<p><a href="#top">Back to the Top</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameliterateprogramminga-literate-programming">
+<a name="literateProgramming"></a> Literate Programming</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#documentation">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namefileheadera-file-headers">
+<a name="fileHeader"></a> File Headers</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#documentation">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameblockcommentsa-block-comments">
+<a name="blockComments"></a> Block Comments</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#documentation">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameinlinecommentsa-in-line-comments">
+<a name="inlineComments"></a> In-line Comments</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#documentation">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namewhentodeva-5-development-guidance">
+<a name="whenToDev"></a> 5. Development Guidance</h2>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namecodereusea-reusability">
+<a name="codeReuse"></a> Reusability</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#whenToDev">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namereplicablea-replicability">
+<a name="replicable"></a> Replicability</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#whenToDev">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namereliabilitya-reliability">
+<a name="reliability"></a> Reliability</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#whenToDev">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameresponsibilitya-responsibility">
+<a name="responsibility"></a> Responsibility</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#whenToDev">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namevcsa-6-version-control">
+<a name="vcs"></a> 6. Version Control</h2>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namegita-git-live-it-learn-it-love-it">
+<a name="git"></a> Git: Live it, Learn it, Love it</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namegitinita-repository-initialization">
+<a name="gitInit"></a> Repository Initialization</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namegitadda-staging-code-for-commit">
+<a name="gitAdd"></a> Staging Code for Commit</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namegitcommita-committing-code-to-repository">
+<a name="gitCommit"></a> Committing Code to Repository</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namegitpusha-pushing-changes-to-remote-repository">
+<a name="gitPush"></a> Pushing Changes to Remote Repository</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namegitfetcha-getting-changes-from-remote-repository">
+<a name="gitFetch"></a> Getting Changes from Remote Repository</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namegitmergea-combining-changes-from-other-repositoriesbranches">
+<a name="gitMerge"></a> Combining Changes from Other Repositories/Branches</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namepullrequestsa-pull-requests">
+<a name="pullRequests"></a> Pull Requests</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namecontributingcodea-code-contributions">
+<a name="contributingCode"></a> Code Contributions</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="##vcs">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namecodestylea-7-style-guides">
+<a name="codeStyle"></a> 7. Style Guides</h2>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namestataa-stata">
+<a name="Stata"></a> Stata</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namera-r">
+<a name="R"></a> R</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namejavaa-java">
+<a name="Java"></a> Java</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namesqla-sql">
+<a name="SQL"></a> SQL</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namebasha-bash">
+<a name="bash"></a> Bash</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namecsharpa-c">
+<a name="CSharp"></a> C</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namevba-visual-basic">
+<a name="vb"></a> Visual Basic</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namejuliaa-julia">
+<a name="Julia"></a> Julia</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namepythona-python">
+<a name="Python"></a> Python</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namebatcha-batch">
+<a name="batch"></a> Batch</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeStyle">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namecodereviewa-8-code-reviews">
+<a name="codeReview"></a> 8. Code Reviews</h2>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namereviewingcodea-reviewing-code">
+<a name="reviewingCode"></a> Reviewing Code</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeReview">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-namecheckingstylea-checking-style">
+<a name="checkingStyle"></a> Checking Style</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeReview">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameqaqca-9-qaqc">
+<a name="qaqc"></a> 9. QA/QC</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#codeReview">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-namebusinessrulesa-collecting-business-rules">
+<a name="businessRules"></a> Collecting Business Rules</h2>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameuserstoriesa-user-stories">
+<a name="userStories"></a> User Stories</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#businessRules">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameepicsa-epics">
+<a name="epics"></a> Epics</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#businessRules">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameprojectsa-projects">
+<a name="projects"></a> Projects</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#businessRules">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h2 id="a-nametestinga-10-testing">
+<a name="testing"></a> 10. Testing</h2>
+
+<p><a href="#top">Back to the Top</a>  <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameunita-unit-testing">
+<a name="unit"></a> Unit Testing</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#testing">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameregressiona-regression-tests">
+<a name="regression"></a> Regression Tests</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#testing">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+<h3 id="a-nameuata-user-acceptance-testing">
+<a name="uat"></a> User Acceptance Testing</h3>
+
+<p><a href="#top">Back to the Top</a> <a href="#testing">Back to beginning of Section</a> <a href="#codingStandardsTOC">Back to Table of Contents</a></p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Office of Data, Research, and Accountability</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Office of Data, Research, and Accountability</li>
+          <li><a href="mailto:Billy.Buchanan@fayettte.kyschools.us">Billy.Buchanan@fayettte.kyschools.us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/fcps">
+              <span class="icon  icon--github">
+                <svg viewbox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"></path>
+                </svg>
+              </span>
+
+              <span class="username">fcps</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Data and Coding Standards</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
