@@ -21,7 +21,7 @@
         * [Numeric Encoding](#numericEncoding)
         * [Dates, Times, and Datetimes](#dateTime)
         * [Binary/Compressed Large OBjects](#lobs)
-    3. [Metadata](#metadata)
+    3. [Metadata](../dataStandards/metadata/)
         * [Codebook](#codebook)
         * [Data Dictionary](#dataDictionary)
         * [Labeling Numerically Encoded Data](#valueLabels)
@@ -82,28 +82,7 @@ Section related to practices related to typing/casting data.
 
 [Back to the Top](#top) [Back to Top of Section](#typecast) [Back to Table of Contents](#dataStandardsTOC)
 
-## <a name="metadata"></a> 3. Metadata requirements/Practices
-Section related to metadata requirements/standards of practice.
-
-[Back to the Top](#top)  [Back to Table of Contents](#dataStandardsTOC)
-
-### <a name="codebook"></a> Codebooks
-
-[Back to the Top](#top) [Back to Top of Section](#metadata) [Back to Table of Contents](#dataStandardsTOC)
-
-### <a name="dataDictionary"></a> Data Dictionary
-
-[Back to the Top](#top) [Back to Top of Section](#metadata) [Back to Table of Contents](#dataStandardsTOC)
-
-### <a name="valueLabels"></a> Labeling Numerically Encoded Data
-
-[Back to the Top](#top) [Back to Top of Section](#metadata) [Back to Table of Contents](#dataStandardsTOC)
-
-### <a name="variableLabels"></a> Labeling Variables/Columns
-
-[Back to the Top](#top) [Back to Top of Section](#metadata) [Back to Table of Contents](#dataStandardsTOC)
-
-
+#include "metadata.md"
 
 
 
