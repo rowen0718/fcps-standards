@@ -21,7 +21,7 @@
         * [Numeric Encoding](#numericEncoding)
         * [Dates, Times, and Datetimes](#dateTime)
         * [Binary/Compressed Large OBjects](#lobs)
-    3. [Metadata](../dataStandards/metadata/)
+    3. [Metadata](#metadata)
         * [Codebook](#codebook)
         * [Data Dictionary](#dataDictionary)
         * [Labeling Numerically Encoded Data](#valueLabels)
@@ -82,7 +82,7 @@ Section related to practices related to typing/casting data.
 
 [Back to the Top](#top) [Back to Top of Section](#typecast) [Back to Table of Contents](#dataStandardsTOC)
 
-#include "metadata.md"
+{ include metadata.md }
 
 
 
