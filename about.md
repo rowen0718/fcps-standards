@@ -1,9 +1,16 @@
 ---
 layout: page
-title: 
+title: Data, Research, and Accountability Standards 
 permalink: /about/
 ---
 
-[FCPS Data Standards](../dataStandards/dataStandards.md)
 
-[FCPS Coding Standards](../codingStandards)
+[Analytics Standards](../analyticsStandards/analyticsStandards.md)
+
+[Coding Standards](../codingStandards)
+
+[Data Standards](../dataStandards/dataStandards.md)
+
+[Data Visualization Standards](../visualizationStandards/visualizationStandards.md)
+
+
