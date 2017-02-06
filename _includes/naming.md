@@ -111,24 +111,24 @@ jpn	 | 	Japanese    |   jpr	 | 	Japanese : Reading
 jps	 | 	Japanese : Speaking    |   jpw	 | 	Japanese : Writing
 lat	 | 	Latin    |   lnf	 | 	Letter Naming Fluency
 lst	 | 	Listening    |   lit	 | 	Literature
-mcn	 | 	Macroeconomics    |   mth	 | 	Mathematics
-icn	 | 	Microeconomics    |   mus	 | 	Music Theory
-nwf	 | 	Nonsense Word Fluency    |   ora	 | 	Oral Language
-orf	 | 	Oral Reading Fluency    |   tot	 | 	Overall/Total Score
-psf	 | 	Phoneme Segmentation Fluency    |   pha	 | 	Phonological Awareness
-phy	 | 	Physics    |   pln	 | 	Plan
-trg	 | 	Plane Geometry/Trigonometry    |   pal	 | 	Pre-Algebra
-psd	 | 	Problem Solving & Data Analysis    |   psy	 | 	Psychology
-rdg	 | 	Reading    |   rnw	 | 	Reading & Writing
-rla	 | 	Reading/Language Arts    |   rtf	 | 	Retell Fluency
-rhs	 | 	Rhetorical Skills    |   sci	 | 	Science
-sel	 | 	Selection Index    |   aso	 | 	Social Skills
-soc	 | 	Social Studies    |   esp	 | 	Spanish
-esr	 | 	Spanish : Reading    |   ess	 | 	Spanish : Speaking
-esw	 | 	Spanish : Writing    |   spk	 | 	Speaking
-ecv	 | 	Standard English Conventions    |   sts	 | 	Statistics
-usm	 | 	Usage Mechanics    |   wuf	 | 	Word Use Fluency
-wrt	 | 	Writing    |   |  
+lrc  |  Literacy | mcn	 | 	Macroeconomics    
+mth	 | 	Mathematics | icn	 | 	Microeconomics    
+mus	 | 	Music Theory | nwf	 | 	Nonsense Word Fluency    
+ora	 | 	Oral Language | orf	 | 	Oral Reading Fluency    
+tot	 | 	Overall/Total Score | psf	 | 	Phoneme Segmentation Fluency    
+pha	 | 	Phonological Awareness | phy	 | 	Physics    
+pln	 | 	Plan | trg	 | 	Plane Geometry/Trigonometry    
+pal	 | 	Pre-Algebra | psd	 | 	Problem Solving & Data Analysis    
+psy	 | 	Psychology | rdg	 | 	Reading    
+rnw	 | 	Reading & Writing | rla	 | 	Reading/Language Arts    
+rtf	 | 	Retell Fluency | rhs	 | 	Rhetorical Skills    
+sci	 | 	Science | sel	 | 	Selection Index    
+aso	 | 	Social Skills | soc	 | 	Social Studies    
+esp	 | 	Spanish | esr	 | 	Spanish : Reading    
+ess	 | 	Spanish : Speaking | esw	 | 	Spanish : Writing    
+spk	 | 	Speaking | ecv	 | 	Standard English Conventions    
+sts	 | 	Statistics | usm	 | 	Usage Mechanics    
+wuf	 | 	Word Use Fluency | wrt	 | 	Writing     
 
 
 <a name="scoreCodeTable"></a>
