@@ -90,47 +90,47 @@ Table. <em>subjectCode values and descriptors.</em>
 
 subjectCode | Meaning | subjectCode | Meaning
 --------- | --------- | --------- | ---------
-al1	 | 	Algebra I     | al2	 | 	Algebra II
-beh	 | 	Behavior      | bio	 | 	Biology
-bmg	 | 	Business Management    |   clc	 | 	Calculus
-cap	 | 	Capstone    |   chm	 | 	Chemestry
-chi	 | 	Chinese    |   chr	 | 	Chinese : Reading
-chs	 | 	Chinese : Speaking    |   chw	 | 	Chinese : Writing
-cog	 | 	Cognitive Skills    |   cme	 | 	Command of Evidence
-cmp	 | 	Comprehension    |   com	 | 	Computer Science
-ecn	 | 	Economics    |   env	 | 	Environmental Science
-eur	 | 	European History    |   exp	 | 	Explore
-ide	 | 	Expression of Ideas    |   fmo	 | 	Fine Motor Skills
-fpa	 | 	Fine/Performing Arts    |   fre	 | 	French
-frr	 | 	French : Reading    |   frs	 | 	French : Speaking
-frw	 | 	French : Writing    |   geo	 | 	Geometry
-ger	 | 	German    |   gov	 | 	Government and Politics
-gmo	 | 	Gross Motor Skills    |   his	 | 	History
-hge	 | 	Human Geography    |   isf	 | 	Initial Sound Fluency
-jpn	 | 	Japanese    |   jpr	 | 	Japanese : Reading
-jps	 | 	Japanese : Speaking    |   jpw	 | 	Japanese : Writing
-lat	 | 	Latin    |   lnf	 | 	Letter Naming Fluency
+adb  |  Adaptive Behavior  |  al1	 | 	Algebra I
+al2	 | 	Algebra II  |  beh	 | 	Behavior
+bio	 | 	Biology  |  bmg	 | 	Business Management
+clc	 | 	Calculus  |  cap	 | 	Capstone
+chm	 | 	Chemestry  |  chi	 | 	Chinese
+chr	 | 	Chinese : Reading  |  chs	 | 	Chinese : Speaking
+chw	 | 	Chinese : Writing  |  cog	 | 	Cognitive Skills
+cme	 | 	Command of Evidence  |  cmp	 | 	Comprehension
+com	 | 	Computer Science  |  ecn	 | 	Economics
+env	 | 	Environmental Science  |  eur	 | 	European History
+exp	 | 	Explore  |  ede	 | 	Expression of Ideas
+fmo	 | 	Fine Motor Skills  |  fpa	 | 	Fine/Performing Arts
+fre	 | 	French  |  frr	 | 	French : Reading
+frs	 | 	French : Speaking  |  frw	 | 	French : Writing
+geo	 | 	Geometry  |  ger	 | 	German
+gov	 | 	Government and Politics  |  gmo	 | 	Gross Motor Skills
+his	 | 	History  |  hge	 | 	Human Geography
+isf	 | 	Initial Sound Fluency  |  jpn	 | 	Japanese
+jpr	 | 	Japanese : Reading  |  jps	 | 	Japanese : Speaking
+jpw	 | 	Japanese : Writing  |  lgc  |  Language/Communication
+lat	 | 	Latin  |  lnf	 | 	Letter Naming Fluency
 lst	 | 	Listening    |   lit	 | 	Literature
 lrc  |  Literacy | mcn	 | 	Macroeconomics    
 mth	 | 	Mathematics | icn	 | 	Microeconomics    
 mus	 | 	Music Theory | nwf	 | 	Nonsense Word Fluency    
 ora	 | 	Oral Language | orf	 | 	Oral Reading Fluency    
 tot	 | 	Overall/Total Score | psf	 | 	Phoneme Segmentation Fluency    
-pha	 | 	Phonological Awareness | phy	 | 	Physics    
-pln	 | 	Plan | trg	 | 	Plane Geometry/Trigonometry    
-pal	 | 	Pre-Algebra | psd	 | 	Problem Solving & Data Analysis    
-psy	 | 	Psychology | rdg	 | 	Reading    
-rnw	 | 	Reading & Writing | rla	 | 	Reading/Language Arts    
-rtf	 | 	Retell Fluency | rhs	 | 	Rhetorical Skills    
-sci	 | 	Science | sel	 | 	Selection Index    
+pha	 | 	Phonological Awareness | pwb  |  Physical Well-Being
+phy	 | 	Physics  |  pln	 | 	Plan
+trg	 | 	Plane Geometry/Trigonometry  |  pal	 | 	Pre-Algebra
+psd	 | 	Problem Solving & Data Analysis  |  psy	 | 	Psychology
+rdg	 | 	Reading   |  rnw	 | 	Reading & Writing
+rla	 | 	Reading/Language Arts  |  rtf	 | 	Retell Fluency
+rhs	 | 	Rhetorical Skills  |  sci	 | 	Science
+sel	 | 	Selection Index    |  shs  | Self-Help Skills
 aso	 | 	Social Skills | soc	 | 	Social Studies    
 esp	 | 	Spanish | esr	 | 	Spanish : Reading    
 ess	 | 	Spanish : Speaking | esw	 | 	Spanish : Writing    
 spk	 | 	Speaking | ecv	 | 	Standard English Conventions    
 sts	 | 	Statistics | usm	 | 	Usage Mechanics    
 wuf	 | 	Word Use Fluency | wrt	 | 	Writing     
-pwb  |  Physical Well-Being | lgc  |  Language/Communication
-adb  |  Adaptive Behavior | shs  |  Social-Emotional Skills
 
 <a name="scoreCodeTable"></a>
 Table. <em>scoreCode values and descriptors.</em>
