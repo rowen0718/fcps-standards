@@ -129,7 +129,8 @@ ess	 | 	Spanish : Speaking | esw	 | 	Spanish : Writing
 spk	 | 	Speaking | ecv	 | 	Standard English Conventions    
 sts	 | 	Statistics | usm	 | 	Usage Mechanics    
 wuf	 | 	Word Use Fluency | wrt	 | 	Writing     
-
+pwb  |  Physical Well-Being | lgc  |  Language/Communication
+adb  |  Adaptive Behavior | shs  |  Social-Emotional Skills
 
 <a name="scoreCodeTable"></a>
 Table. <em>scoreCode values and descriptors.</em>
